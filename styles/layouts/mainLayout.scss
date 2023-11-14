@@ -1,0 +1,103 @@
+.main-layout {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  position: relative;
+  opacity: 1;
+
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    background: transparent linear-gradient(90deg, var(--unnamed-color-040404) 0%, #040404FA 21%, #04040400 100%) 0 0 no-repeat padding-box;
+
+    .ant-menu-vertical {
+      .ant-menu-item-selected {
+        width: 82px;
+        height: 82px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border-radius: 50%;
+        flex-wrap: wrap;
+
+        .ant-menu-title-content {
+          display: none;
+        }
+      }
+    }
+
+    .menu {
+      padding-inline: 0;
+      background-color: inherit;
+
+      li {
+        margin-bottom: 34px;
+
+        span {
+          margin-left: 50px;
+          letter-spacing: var(--unnamed-character-spacing-0);
+          color: var(--unnamed-color-f1f1f1);
+          text-align: left;
+          font: normal normal normal 36px/43px Tajawal;
+          opacity: 1;
+        }
+      }
+
+      .ant-menu-item-selected {
+        background: var(--unnamed-color-3b486d) 0 0 no-repeat padding-box;
+
+        span {
+          letter-spacing: var(--unnamed-character-spacing-0);
+          color: var(--unnamed-color-f1f1f1);
+          text-align: left;
+          font: normal normal bold 36px/43px Tajawal;
+          opacity: 1;
+        }
+      }
+    }
+
+    .bar-items {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap;
+
+      .item {
+        width: 82px;
+        height: 82px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+    }
+  }
+
+  .nav-bar-active {
+    width: 312px;
+  }
+
+  .container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+  }
+}
+.navigation-background {
+  position: absolute;
+  background: transparent linear-gradient(90deg, var(--unnamed-color-040404) 0%, #040404FA 21%, #04040400 100%) 0 0 no-repeat padding-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
